@@ -21,7 +21,7 @@ export const builds_products = (recherche) => {
     let catalogue = document.getElementsByClassName("products-slick")[0];
     productloader.load().then(data => {
         data.produits.forEach((p) => {
-            if (recherche !== undefined && products.titre.includes(recherche)){
+            if (recherche !== undefined && p.titre.includes(recherche)){
                 catalogue.appendChild(products.display_products(p));
             }
         })
