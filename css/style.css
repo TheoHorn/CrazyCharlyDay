@@ -657,7 +657,7 @@ textarea.input {
 .main-nav>li>a:after {
   content: "";
   display: block;
-  width: 0%;
+  width: 0;
   height: 2px;
   background-color: #E77441;
   -webkit-transition: 0.2s all;
@@ -1170,6 +1170,11 @@ textarea.input {
 /*----------------------------*\
 	Products slick
 \*----------------------------*/
+.products-slick {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em,1fr));
+  grid-gap: .2em;
+}
 
 .products-slick .slick-list {
   padding-bottom: 60px;
