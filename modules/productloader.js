@@ -1,4 +1,4 @@
-export const loadRessource = (uri) => {
+const loadRessource = (uri) => {
     return new Promise(
         function (resolve, reject) {
             fetch(uri,
@@ -13,6 +13,11 @@ export const loadRessource = (uri) => {
     );
 }
 
-export const load = () => {
+const load = () => {
     return loadRessource("https://webetu.iutnc.univ-lorraine.fr/~monza1u/CrazyCharlyDay/api/index.php");
+}
+
+export default {
+    loadRessource,
+    load,
 }

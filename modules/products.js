@@ -1,4 +1,3 @@
-import {loadRessource} from "./productloader.js";
 import cart from "./ui_cart.js";
 
 export const display_products = (produit) => {
