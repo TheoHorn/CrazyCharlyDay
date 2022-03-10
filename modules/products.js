@@ -1,5 +1,5 @@
 import {loadRessource} from "./productloader.js";
-import * as cart from "./ui_cart.js";
+import cart from "./ui_cart.js";
 
 export const load = () => {
     return loadRessource("https://webetu.iutnc.univ-lorraine.fr/~monza1u/CrazyCharlyDay/api/index.php");
@@ -24,8 +24,8 @@ export const display_products = (produit) => {
                     <!-- /product -->`;
     let pCart = dom.getElementsByClassName("add-to-cart-btn")[0];
     pCart.addEventListener('click',() =>{
-        //cart.addToCart(p);
-        //cart.displayCart();
+        cart.addToCart(produit);
+        cart.displayCart();
     });
     return dom;
 }
