@@ -19,13 +19,4 @@ class Authentication
     public static function updatePass($userid,$password) {
         Utilisateur::query()->where('id','=',$userid)->update(array('password'=>$password));
     }
-
-    /**
-     * @throws AuthException
-     */
-    public static function checkAccessRights($required): bool
-    {
-        if($_SESSION['auth_level']<$required) throw new AuthException;
-        return true;
-    }
 }
