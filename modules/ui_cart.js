@@ -43,7 +43,7 @@ const displayCart = function () {
                     </div>
                     <div class="product-body">
                         <h3 class="product-name"><a href="#">${ob.product.titre}</a></h3>
-                        <h4 class="product-poids"><span class="qty">${ob.qty}</span>${ob.product.poids}</h4>
+                        <h4 class="product-poids"><span class="qty">${ob.qty}</span><br>${ob.product.poids}</h4>
                     </div>
                     <button class="delete"><i class="fa fa-close"></i></button>
 				</div>`;
