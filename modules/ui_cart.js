@@ -39,25 +39,25 @@ const displayCart = function () {
     let affCart = tabCart.map(ob =>{
         return `<div id="product-widget">
                     </div><div class="product-img">
-                        <img src="./img/produits/1.jpg" alt="">
+                        <img src="./img/produits/${ob.product.id}.jpg" alt="">
                     </div>
                     <div class="product-body">
-                        <h3 class="product-name"><a href="#">Nom produit</a></h3>
-                        <h4 class="product-poids"><span class="qty">${ob.qty}</span>Prix</h4>
+                        <h3 class="product-name"><a href="#">${ob.product.titre}</a></h3>
+                        <h4 class="product-poids"><span class="qty">${ob.qty}</span>${ob.product.poids}</h4>
                     </div>
                     <button class="delete"><i class="fa fa-close"></i></button>
 				</div>`;
     });
     const reducer = (previousValue, currenValue) => previousValue + currenValue;
     if(affCart.length!==0) {
-        document.getElementsByClassName("cart-list")[0].innerHTML = affCart.reduce(reducer)
+        document.getElementsByClassName("cart-list")[0].innerHTML = affCart.reduce(reducer);
     }else{
         document.getElementsByClassName("cart-list")[0].innerHTML = ``;
     }
 
     document.getElementsByClassName("cart-total")[0].innerHTML=
         `<small>${genericCalc((x,y)=>x+y.qty)}</small>
-            <h5>Total: prix</h5>`
+            <h5>Total: prix</h5>`;
 }
 
 export default {
