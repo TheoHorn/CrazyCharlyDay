@@ -35,8 +35,8 @@ export const cart_toggle_visibility = () => {
 }
 
 const displayCart = function () {
-    document.getElementById('qty').innerHTML=genericCalc((x,y)=>x+y.qty)
-    let affCart = cart.tabCart.map(ob =>{
+    document.getElementsByClassName("qty")[0].innerHTML=genericCalc((x,y)=>x+y.qty)
+    let affCart = tabCart.map(ob =>{
         return `<div class="product-img">
 				    <img src="./img/produits/1.jpg" alt="">
 				</div>
