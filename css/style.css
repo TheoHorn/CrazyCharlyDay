@@ -442,6 +442,10 @@ textarea.input {
 /*----------------------------*\
 	Logo
 \*----------------------------*/
+.logout{
+  position: absolute;
+  top: 40px; right: 25%;
+}
 
 #header {
   padding-top: 15px;
@@ -2014,6 +2018,7 @@ textarea.input {
 ===========================================================*/
 
 #footer {
+  margin: 60px 0px 0px 0px;
   background: #F2DCA4;
   color: black;
 }
