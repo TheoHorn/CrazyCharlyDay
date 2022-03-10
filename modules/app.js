@@ -1,7 +1,7 @@
 import * as ui_cart from "./ui_cart.js";
 import * as products from "./products.js";
 import productloader from"./productloader.js";
-
+import * as ui_products from "./ui_products.js"
 
 export let init = function(){
     let cart = document.getElementsByClassName("dropdown")[0];
@@ -10,10 +10,17 @@ export let init = function(){
         console.log(e.target)
     })
 
-    let catalogue = document.getElementsByClassName("products-slick")[0];
-    productloader.load().then(data => {
-        data.produits.forEach((p) => {
-            catalogue.appendChild(products.display_products(p));
-        })
-    })
+    ui_products.builds_products_init();
+    let txtRech = document.getElementById("search");
+    let bRech = document.getElementsByClassName("search-btn")[0];
+    bRech.addEventListener("click",(event) => {
+        if(txtRech.value !== ""){
+            ui_products.remove_products()
+            ui_products.builds_products(txtRech.value)
+        }else{
+            ui_products.remove_products()
+            ui_products.builds_products_init();
+        }
+    });
+
 }
