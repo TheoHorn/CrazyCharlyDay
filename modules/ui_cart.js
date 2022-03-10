@@ -18,8 +18,11 @@ const genericCalc = function (f) {
     return tabCart.reduce(f,0)
 }
 
-const emptyCart = function () {
-    tabCart.length = 0;
+const DeleteCart = function (f){
+    let tab = tabCart.indexOf(f);
+    if (tab !== -1) {
+        tabCart.splice(tab, 1);
+    }
 }
 
 export const cart_toggle_visibility = () => {
@@ -47,6 +50,11 @@ const displayCart = function () {
                     </div>
                     <button class="delete"><i class="fa fa-close"></i></button>
 				</div>`;
+        let BDelet = document.getElementsByClassName("delete")[0];
+        BDelet.addEventListener('click',() =>{
+            DeleteCart(ob);
+            displayCart();
+        });
     });
     const reducer = (previousValue, currenValue) => previousValue + currenValue;
     if(affCart.length!==0) {
