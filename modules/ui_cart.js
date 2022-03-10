@@ -50,12 +50,12 @@ const displayCart = function () {
     });
     const reducer = (previousValue, currenValue) => previousValue + currenValue;
     if(affCart.length!==0) {
-        document.getElementById('cart-list').innerHTML = affCart.reduce(reducer)
+        document.getElementsByClassName("cart-list")[0].innerHTML = affCart.reduce(reducer)
     }else{
-        document.getElementById('cart-list').innerHTML = ``;
+        document.getElementsByClassName("cart-list")[0].innerHTML = ``;
     }
 
-    document.getElementById('cart-total').innerHTML=
+    document.getElementsByClassName("cart-total")[0].innerHTML=
         `<small>${genericCalc((x,y)=>x+y.qty)}</small>
             <h5>Total: prix</h5>`
 }
