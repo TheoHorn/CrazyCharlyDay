@@ -15,5 +15,7 @@ if(isset($_POST['nom'])) {
         }
         $_SESSION['prenom'] = $user.prenom;
         $_SESSION['nom'] = $user.nom;
+        header('Location: /admin.html');
+        exit();
     }
 }
