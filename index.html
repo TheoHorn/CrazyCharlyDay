@@ -1,296 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>L'Atelier 17.91</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<!-- Google font -->
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+	<title>L'Atelier 17.91</title>
 
-		<!-- Bootstrap -->
-		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
-		<!-- nouislider -->
-		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 
-		<!-- Font Awesome Icon -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- nouislider -->
+	<link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
 
-		<!-- Custom stlylesheet -->
-		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 
-    </head>
-	<body>
-		<!-- HEADER -->
-		<header>
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
 
-			<!-- MAIN HEADER -->
-			<div id="header">
-				<!-- container -->
-				<div class="container">
-					<!-- row -->
-					<div class="row">
-						<!-- LOGO -->
-						<div class="col-md-3">
-							<div class="header-logo">
-								<a href="./index.html" class="logo">
-									<img src="./img/logo.png" alt="">
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header>
+
+		<!-- MAIN HEADER -->
+		<div id="header">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- LOGO -->
+					<div class="col-md-3">
+						<div class="header-logo">
+							<a href="./index.html" class="logo">
+								<img src="./img/logo.png" alt="">
+							</a>
+						</div>
+					</div>
+					<!-- /LOGO -->
+
+					<!-- SEARCH BAR -->
+					<div class="col-md-6">
+						<div class="header-search">
+							<form>
+								<select class="input-select">
+									<option value="0">Toutes Categories</option>
+									<option value="1">Beauté</option>
+									<option value="1">Bijoux</option>
+									<option value="1">Décoration</option>
+									<option value="1">Produit ménager</option>
+									<option value="1">Upcycling</option>
+								</select>
+								<input class="input" placeholder="Rechercher">
+								<button class="search-btn">Rechercher</button>
+							</form>
+						</div>
+					</div>
+					<!-- /SEARCH BAR -->
+
+					<!-- ACCOUNT -->
+					<div class="col-md-3 clearfix">
+						<div class="header-ctn">
+
+							<!-- Cart -->
+							<div class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+									<i class="fa fa-shopping-cart"></i>
+									<span>Panier</span>
+									<div class="qty"></div>
 								</a>
-							</div>
-						</div>
-						<!-- /LOGO -->
-
-						<!-- SEARCH BAR -->
-						<div class="col-md-6">
-							<div class="header-search">
-								<form>
-									<select class="input-select">
-										<option value="0">Toutes Categories</option>
-										<option value="1">Beauté</option>
-										<option value="1">Bijoux</option>
-										<option value="1">Décoration</option>
-										<option value="1">Produit ménager</option>
-										<option value="1">Upcycling</option>
-									</select>
-									<input class="input" placeholder="Rechercher">
-									<button class="search-btn">Rechercher</button>
-								</form>
-							</div>
-						</div>
-						<!-- /SEARCH BAR -->
-
-						<!-- ACCOUNT -->
-						<div class="col-md-3 clearfix">
-							<div class="header-ctn">
-
-								<!-- Cart -->
-								<div class="dropdown">
-									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-										<i class="fa fa-shopping-cart"></i>
-										<span>Panier</span>
-										<div class="qty"></div>
-									</a>
-									<div class="cart-dropdown">
-										<div class="cart-list">
-											<div class="product-widget">
-												<div class="product-img">
-													<img src="./img/produits/1.jpg" alt="">
-												</div>
-												<div class="product-body">
-													<h3 class="product-name"><a href="#">Nom produit</a></h3>
-													<h4 class="product-poids"><span class="qty">Qte</span>Prix</h4>
-												</div>
-												<button class="delete"><i class="fa fa-close"></i></button>
-											</div>
-
-											<div class="product-widget">
-												<div class="product-img">
-													<img src="./img/produits/2.jpg" alt="">
-												</div>
-												<div class="product-body">
-													<h3 class="product-name"><a href="#">Nom</a></h3>
-													<h4 class="product-poids"><span class="qty">qte</span>prix</h4>
-												</div>
-												<button class="delete"><i class="fa fa-close"></i></button>
-											</div>
-										</div>
-										<div class="cart-summary">
-											<small>Nbr item selectionner</small>
-											<h5>Total: prix</h5>
-										</div>
-										<div class="cart-btns">
-											<a href="./checkout.html">Valider  <i class="fa fa-arrow-circle-right"></i></a>
-										</div>
-									</div>
-								</div>
-								<!-- /Cart -->
-
-								<!-- Menu Toogle -->
-								<div class="menu-toggle">
-									<a href="#">
-										<i class="fa fa-bars"></i>
-										<span>Menu</span>
-									</a>
-								</div>
-								<!-- /Menu Toogle -->
-							</div>
-						</div>
-						<!-- /ACCOUNT -->
-					</div>
-					<!-- row -->
-				</div>
-				<!-- container -->
-			</div>
-			<!-- /MAIN HEADER -->
-		</header>
-		<!-- /HEADER -->
-
-		<!-- NAVIGATION -->
-		<nav id="navigation">
-			<!-- container -->
-			<div class="container">
-				<!-- responsive-nav -->
-				<div id="responsive-nav">
-					<!-- NAV -->
-					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="#">Accueil</a></li>
-						<li><a href="#">Catégories</a></li>
-					</ul>
-					<!-- /NAV -->
-				</div>
-				<!-- /responsive-nav -->
-			</div>
-			<!-- /container -->
-		</nav>
-		<!-- /NAVIGATION -->
-
-		<!-- SECTION -->
-		<div class="section">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-					<!-- shop -->
-					<div class="col-md-4 col-xs-6">
-						<div class="shop">
-							<div class="shop-img">
-								<img src="./img/produits/1.jpg" alt="">
-							</div>
-							<div class="shop-body">
-								<h3>BOX 1<br>Collection</h3>
-								<a href="#" class="cta-btn">Acheter <i class="fa fa-arrow-circle-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<!-- /shop -->
-				</div>
-				<!-- /row -->
-			</div>
-			<!-- /container -->
-		</div>
-		<!-- /SECTION -->
-
-		<!-- SECTION -->
-		<div class="section">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-
-					<!-- section title -->
-					<div class="col-md-12">
-						<div class="section-title">
-							<h3 class="title">Produits</h3>
-							<div class="section-nav">
-								<ul class="section-tab-nav tab-nav">
-									<li class="active"><a data-toggle="tab" href="#tab1">Tous les produits</a></li>
-									<li><a data-toggle="tab" href="#tab1">Beauté</a></li>
-									<li><a data-toggle="tab" href="#tab1">Bijoux</a></li>
-									<li><a data-toggle="tab" href="#tab1">Décoration</a></li>
-									<li><a data-toggle="tab" href="#tab1">Produit ménager</a></li>
-									<li><a data-toggle="tab" href="#tab1">Upcycling</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- /section title -->
-
-					<!-- Products tab & slick -->
-					<div class="col-md-12">
-						<div class="row">
-							<div class="products-tabs">
-								<!-- tab -->
-								<div id="tab1" class="tab-pane active">
-									<div class="products-slick" data-nav="#slick-nav-1">
-										<!-- product -->
-										<div class="product">
+								<div class="cart-dropdown">
+									<div class="cart-list">
+										<div class="product-widget">
 											<div class="product-img">
 												<img src="./img/produits/1.jpg" alt="">
 											</div>
 											<div class="product-body">
-												<p class="product-category">Categorie</p>
-												<h3 class="product-name"><a href="#">Nom Produit</a></h3>
-												<h4 class="product-poids">Prix</h4>
+												<h3 class="product-name"><a href="#">Nom produit</a></h3>
+												<h4 class="product-price"><span class="qty">Qte</span>Prix</h4>
 											</div>
-											<div class="add-to-cart">
-												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>ajouter au panier</button>
-											</div>
+											<button class="delete"><i class="fa fa-close"></i></button>
 										</div>
-										<!-- /product -->
+
+										<div class="product-widget">
+											<div class="product-img">
+												<img src="./img/produits/2.jpg" alt="">
+											</div>
+											<div class="product-body">
+												<h3 class="product-name"><a href="#">Nom</a></h3>
+												<h4 class="product-price"><span class="qty">qte</span>prix</h4>
+											</div>
+											<button class="delete"><i class="fa fa-close"></i></button>
+										</div>
 									</div>
-									<div id="slick-nav-1" class="products-slick-nav"></div>
+									<div class="cart-summary">
+										<small>Nbr item selectionner</small>
+										<h5>Total: prix</h5>
+									</div>
+									<div class="cart-btns">
+										<a href="./checkout.html">Valider <i class="fa fa-arrow-circle-right"></i></a>
+									</div>
 								</div>
-								<!-- /tab -->
 							</div>
+							<!-- /Cart -->
+
+							<!-- Menu Toogle -->
+							<div class="menu-toggle">
+								<a href="#">
+									<i class="fa fa-bars"></i>
+									<span>Menu</span>
+								</a>
+							</div>
+							<!-- /Menu Toogle -->
 						</div>
 					</div>
-					<!-- Products tab & slick -->
+					<!-- ACCOUNT -->
+					<a class="logout" href="./login.html">Connexion</a>
+					<!-- /ACCOUNT -->
+				</div>
+				<!-- row -->
+			</div>
+			<!-- container -->
+		</div>
+		<!-- /MAIN HEADER -->
+	</header>
+	<!-- /HEADER -->
+
+	<!-- NAVIGATION -->
+	<nav id="navigation">
+		<!-- container -->
+		<div class="container">
+			<!-- responsive-nav -->
+			<div id="responsive-nav">
+				<!-- NAV -->
+				<ul class="main-nav nav navbar-nav">
+					<li class="active"><a href="#">Accueil</a></li>
+					<li><a href="#">Catégories</a></li>
+				</ul>
+				<!-- /NAV -->
+			</div>
+			<!-- /responsive-nav -->
+		</div>
+		<!-- /container -->
+	</nav>
+	<!-- /NAVIGATION -->
+
+	<!-- SECTION -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- shop -->
+				<div class="col-md-4 col-xs-6">
+					<div class="shop">
+						<div class="shop-img">
+							<img src="./img/produits/1.jpg" alt="">
+						</div>
+						<div class="shop-body">
+							<h3>BOX 1<br>Collection</h3>
+							<a href="#" class="cta-btn">Acheter <i class="fa fa-arrow-circle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /shop -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /SECTION -->
+
+	<!-- SECTION -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+
+				<!-- section title -->
+				<div class="col-md-12">
+					<div class="section-title">
+						<h3 class="title">Produits</h3>
+						<div class="section-nav">
+							<ul class="section-tab-nav tab-nav">
+								<li class="active"><a data-toggle="tab" href="#tab1">Tous les produits</a></li>
+								<li><a data-toggle="tab" href="#tab1">Beauté</a></li>
+								<li><a data-toggle="tab" href="#tab1">Bijoux</a></li>
+								<li><a data-toggle="tab" href="#tab1">Décoration</a></li>
+								<li><a data-toggle="tab" href="#tab1">Produit ménager</a></li>
+								<li><a data-toggle="tab" href="#tab1">Upcycling</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /section title -->
+
+				<!-- Products tab & slick -->
+				<div class="col-md-12">
+					<div class="row">
+						<div class="products-tabs">
+							<!-- tab -->
+							<div id="tab1" class="tab-pane active">
+								<div class="products-slick" data-nav="#slick-nav-1">
+									<!-- product -->
+									<div class="product">
+										<div class="product-img">
+											<img src="./img/produits/1.jpg" alt="">
+										</div>
+										<div class="product-body">
+											<p class="product-category">Categorie</p>
+											<h3 class="product-name"><a href="#">Nom Produit</a></h3>
+											<h4 class="product-price">Prix</h4>
+										</div>
+										<div class="add-to-cart">
+											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>ajouter
+												au panier</button>
+										</div>
+									</div>
+									<!-- /product -->
+								</div>
+								<div id="slick-nav-1" class="products-slick-nav"></div>
+							</div>
+							<!-- /tab -->
+						</div>
+					</div>
+				</div>
+				<!-- Products tab & slick -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /SECTION -->
+
+	<!-- FOOTER -->
+	<footer id="footer">
+		<!-- top footer -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-3 col-xs-6">
+						<div class="footer">
+							<h3 class="footer-title">Contactez nous</h3>
+							<ul class="footer-links">
+								<li><a href="#"><i class="fa fa-map-marker"></i>6 Rue Yvan Goll 57050 Metz</a></li>
+								<li><a href="#"><i class="fa fa-phone"></i>06 14 34 35 17</a></li>
+								<li><a href="#"><i class="fa fa-envelope-o"></i>contact@atelier1791.fr</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="clearfix visible-xs"></div>
+
+					<div class="col-md-3 col-xs-6">
+						<div class="footer">
+							<h3 class="footer-title">Information</h3>
+							<ul class="footer-links">
+								<li><a href="#">A propos</a></li>
+								<li><a href="#">Politique de confidentialité</a></li>
+								<li><a href="#">Commandes et retours</a></li>
+								<li><a href="#">Termes & Conditions</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-xs-6">
+						<div class="footer">
+							<h3 class="footer-title">Service</h3>
+							<ul class="footer-links">
+								<li><a href="#">Mon compte</a></li>
+								<li><a href="./checkout.html">Panier</a></li>
+								<li><a href="#">Suivre ma commande</a></li>
+								<li><a href="./admin.html">Interface admin</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<!-- /row -->
 			</div>
 			<!-- /container -->
 		</div>
-		<!-- /SECTION -->
+		<!-- /top footer -->
+	</footer>
+	<!-- /FOOTER -->
 
-		<!-- FOOTER -->
-		<footer id="footer">
-			<!-- top footer -->
-			<div class="section">
-				<!-- container -->
-				<div class="container">
-					<!-- row -->
-					<div class="row">
-						<div class="col-md-3 col-xs-6">
-							<div class="footer">
-								<h3 class="footer-title">Contactez nous</h3>
-								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>6 Rue Yvan Goll 57050 Metz</a></li>
-									<li><a href="#"><i class="fa fa-phone"></i>06 14 34 35 17</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>contact@atelier1791.fr</a></li>
-								</ul>
-							</div>
-						</div>
+	<!-- js script -->
+	<script type="module" src="modules/main.js"></script>
 
-						<div class="clearfix visible-xs"></div>
+</body>
 
-						<div class="col-md-3 col-xs-6">
-							<div class="footer">
-								<h3 class="footer-title">Information</h3>
-								<ul class="footer-links">
-									<li><a href="#">A propos</a></li>
-									<li><a href="#">Politique de confidentialité</a></li>
-									<li><a href="#">Commandes et retours</a></li>
-									<li><a href="#">Termes & Conditions</a></li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="col-md-3 col-xs-6">
-							<div class="footer">
-								<h3 class="footer-title">Service</h3>
-								<ul class="footer-links">
-									<li><a href="#">Mon compte</a></li>
-									<li><a href="./checkout.html">Panier</a></li>
-									<li><a href="#">Suivre ma commande</a></li>
-									<li><a href="./admin.html">Interface admin</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- /row -->
-				</div>
-				<!-- /container -->
-			</div>
-			<!-- /top footer -->
-		</footer>
-		<!-- /FOOTER -->
-
-		<!-- js script -->
-		<script type="module" src="modules/main.js"></script>
-
-	</body>
 </html>
