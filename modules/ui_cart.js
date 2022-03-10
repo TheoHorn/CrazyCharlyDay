@@ -38,8 +38,8 @@ const displayCart = function () {
     document.getElementsByClassName("qty")[0].innerHTML=genericCalc((x,y)=>x+y.qty)
     let affCart = tabCart.map(ob =>{
         return `<div id="product-widget">
-                    </div><div class="product-img">
-                        <img src="./img/produits/${ob.product.id}.jpg" alt="">
+                    <div class="product-img">
+                        <img class="cart-img" src="./img/produits/${ob.product.id}.jpg" alt="">
                     </div>
                     <div class="product-body">
                         <h3 class="product-name"><a href="#">${ob.product.titre}</a></h3>
