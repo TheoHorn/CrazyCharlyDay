@@ -1,7 +1,7 @@
 import * as products from "./products.js";
 import productloader from "./productloader.js";
 
-let btn_gallery = document.getElementBy("load_gallery");
+let btn_gallery = document.getElementById("load_gallery");
 btn_gallery.addEventListener("click", () => products.load().then(data =>{
     //display_products(data)
     console.log(data)
