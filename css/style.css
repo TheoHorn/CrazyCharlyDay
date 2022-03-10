@@ -498,7 +498,7 @@ textarea.input {
 \*----------------------------*/
 
 .header-ctn {
-  float: right;
+  
   padding: 15px 0px;
 }
 
@@ -556,6 +556,10 @@ textarea.input {
   right: 0;
   opacity: 0;
   visibility: hidden;
+}
+
+.dropdown{
+  position : absolute
 }
 
 .dropdown.open>.cart-dropdown {
