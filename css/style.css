@@ -563,8 +563,10 @@ textarea.input {
 }
 
 .dropdown{
-  position : absolute
+  position : absolute;
+  top: 25px; right: 15%;
 }
+
 
 .dropdown.open>.cart-dropdown {
   opacity: 1;
