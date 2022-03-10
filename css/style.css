@@ -880,6 +880,7 @@ textarea.input {
 
 .product:hover {
   border: 2px solid #47ACA4;
+  margin-bottom: 20px;
 }
 
 .product .product-img {
