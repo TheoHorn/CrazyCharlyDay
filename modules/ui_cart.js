@@ -40,7 +40,7 @@ export const cart_toggle_visibility = () => {
 const displayCart = function () {
     document.getElementsByClassName("qty")[0].innerHTML=genericCalc((x,y)=>x+y.qty)
     let affCart = tabCart.map(ob =>{
-        let d = `<div id="product-widget">
+        return `<div id="product-widget">
                     <div class="product-img">
                         <img class="cart-img" src="./img/produits/${ob.product.id}.jpg" alt="">
                     </div>
@@ -50,12 +50,6 @@ const displayCart = function () {
                     </div>
                     <button class="delete"><i class="fa fa-close"></i></button>
 				</div>`;
-        let BDelet = document.getElementsByClassName("delete")[0];
-        BDelet.addEventListener('click',() =>{
-            DeleteCart(ob);
-            displayCart();
-        });
-        return d;
     });
     const reducer = (previousValue, currenValue) => previousValue + currenValue;
     if(affCart.length!==0) {
