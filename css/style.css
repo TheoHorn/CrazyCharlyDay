@@ -866,7 +866,7 @@ textarea.input {
 
 .product {
   position: relative;
-  width: 20%;
+  width: 80%;
   margin: 15px 0px;
   border: 1px solid #b3b6bb;
 }
@@ -1207,6 +1207,8 @@ textarea.input {
   right: 15px;
   z-index: 10;
 }
+
+
 
 .products-slick-nav .slick-prev, .products-slick-nav .slick-next {
   position: static;
