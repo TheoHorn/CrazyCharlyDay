@@ -869,6 +869,7 @@ textarea.input {
   width: 80%;
   margin: 15px 0px;
   border: 1px solid #b3b6bb;
+  margin-bottom: 50px;
 }
 
 .dropdown-open {
@@ -880,7 +881,6 @@ textarea.input {
 
 .product:hover {
   border: 2px solid #47ACA4;
-  margin-bottom: 20px;
 }
 
 .product .product-img {
