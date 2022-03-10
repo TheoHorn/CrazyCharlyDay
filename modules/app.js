@@ -9,9 +9,10 @@ export let init = function(){
         console.log(e.target)
     })
 
+    let catalogue = document.getElementsByClassName("products-slick")[0];
     products.load().then(data => {
         data.produits.forEach((p) => {
-            products.display_products(p);
+            catalogue.appendChild(products.display_products(p));
         })
     })
 }
