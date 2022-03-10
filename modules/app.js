@@ -12,13 +12,12 @@ export let init = function(){
     let txtRech = document.getElementById("search");
     let bRech = document.getElementsByClassName("search-btn")[0];
     bRech.addEventListener("click",(event) => {
-        if(txtRech.value !== ""){
             ui_products.remove_products()
             ui_products.builds_products(txtRech.value)
-        }else{
+        /*else{
             ui_products.remove_products()
             ui_products.builds_products_init();
-        }
+        }*/
     });
 
 }
