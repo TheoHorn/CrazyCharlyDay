@@ -455,6 +455,8 @@ textarea.input {
 
 .header-logo .logo img {
   display: block;
+  height: 50%;
+  width: 50%;
 }
 
 /*----------------------------*\
