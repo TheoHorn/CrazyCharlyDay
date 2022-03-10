@@ -657,7 +657,7 @@ textarea.input {
 .main-nav>li>a:after {
   content: "";
   display: block;
-  width: 0%;
+  width: 0;
   height: 2px;
   background-color: #E77441;
   -webkit-transition: 0.2s all;
@@ -866,7 +866,7 @@ textarea.input {
 
 .product {
   position: relative;
-  width: 20%;
+  width: 80%;
   margin: 15px 0px;
   border: 1px solid #b3b6bb;
 }
@@ -880,6 +880,7 @@ textarea.input {
 
 .product:hover {
   border: 2px solid #47ACA4;
+  margin-bottom: 20px;
 }
 
 .product .product-img {
@@ -1170,6 +1171,11 @@ textarea.input {
 /*----------------------------*\
 	Products slick
 \*----------------------------*/
+.products-slick {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(20em,1fr));
+  grid-gap: .2em;
+}
 
 .products-slick .slick-list {
   padding-bottom: 60px;
@@ -1202,6 +1208,8 @@ textarea.input {
   right: 15px;
   z-index: 10;
 }
+
+
 
 .products-slick-nav .slick-prev, .products-slick-nav .slick-next {
   position: static;
