@@ -442,6 +442,10 @@ textarea.input {
 /*----------------------------*\
 	Logo
 \*----------------------------*/
+.logout{
+  position: absolute;
+  top: 40px; right: 25%;
+}
 
 #header {
   padding-top: 15px;
