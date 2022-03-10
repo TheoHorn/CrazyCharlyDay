@@ -37,20 +37,22 @@ export const cart_toggle_visibility = () => {
 const displayCart = function () {
     document.getElementsByClassName("qty")[0].innerHTML=genericCalc((x,y)=>x+y.qty)
     let affCart = tabCart.map(ob =>{
-        return `<div class="product-img">
-				    <img src="./img/produits/1.jpg" alt="">
-				</div>
-				<div class="product-body">
-					<h3 class="product-name"><a href="#">Nom produit</a></h3>
-					<h4 class="product-poids"><span class="qty">${ob.qty}</span>Prix</h4>
-				</div>
-				<button class="delete"><i class="fa fa-close"></i></button>`;
+        return `<div id="product-widget">
+                    </div><div class="product-img">
+                        <img src="./img/produits/1.jpg" alt="">
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-name"><a href="#">Nom produit</a></h3>
+                        <h4 class="product-poids"><span class="qty">${ob.qty}</span>Prix</h4>
+                    </div>
+                    <button class="delete"><i class="fa fa-close"></i></button>
+				</div>`;
     });
     const reducer = (previousValue, currenValue) => previousValue + currenValue;
     if(affCart.length!==0) {
-        document.getElementById('product-widget').innerHTML = affCart.reduce(reducer)
+        document.getElementById('cart-list').innerHTML = affCart.reduce(reducer)
     }else{
-        document.getElementById('product-widget').innerHTML = ``;
+        document.getElementById('cart-list').innerHTML = ``;
     }
 
     document.getElementById('cart-total').innerHTML=
