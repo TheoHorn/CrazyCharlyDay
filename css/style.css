@@ -483,7 +483,7 @@ textarea.input {
 
 .header-search form .search-btn {
   height: 40px;
-  width: 93px;
+  width: calc(100% - 100);
   background: #47ACA4 ;
   color: #FFF;
   font-weight: 700;
