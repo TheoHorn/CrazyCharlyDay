@@ -858,16 +858,13 @@ textarea.input {
 
 .product {
   position: relative;
+  width: 20%;
   margin: 15px 0px;
-  -webkit-box-shadow: 0px 0px 0px 0px #E4E7ED, 0px 0px 0px 1px #E4E7ED;
-  box-shadow: 0px 0px 0px 0px #E4E7ED, 0px 0px 0px 1px #E4E7ED;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
+  border: 1px solid #b3b6bb;
 }
 
 .product:hover {
-  -webkit-box-shadow: 0px 0px 6px 0px #E4E7ED, 0px 0px 0px 2px #47ACA4 ;
-  box-shadow: 0px 0px 6px 0px #E4E7ED, 0px 0px 0px 2px #47ACA4 ;
+  border: 2px solid #47ACA4;
 }
 
 .product .product-img {
