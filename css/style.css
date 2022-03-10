@@ -109,6 +109,25 @@ ul, ol {
   color: #FFF;
 }
 
+#grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+#grande {
+  grid-column: 0 / 3;
+  grid-row: 1;
+}
+
+#moyenne {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+#petite {
+  grid-column: 2 / 3;
+}
+
 /*----------------------------*\
 	Inputs
 \*----------------------------*/
