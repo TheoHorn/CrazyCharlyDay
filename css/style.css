@@ -867,6 +867,13 @@ textarea.input {
   border: 1px solid #b3b6bb;
 }
 
+.dropdown-open {
+  background-color: #e6d3a3;
+  padding: 20px;
+  border-radius: 5px;
+  border: solid 2px #47ACA4;
+}
+
 .product:hover {
   border: 2px solid #47ACA4;
 }
