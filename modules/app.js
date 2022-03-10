@@ -1,6 +1,4 @@
 import * as ui_cart from "./ui_cart.js";
-import * as products from "./products.js";
-import productloader from"./productloader.js";
 import * as ui_products from "./ui_products.js"
 
 export let init = function(){
