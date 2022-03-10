@@ -11,7 +11,7 @@ export const display_products = (produit) => {
     dom.innerHTML = `
                     <!-- product -->				
                     <div class="product-img">
-                        <img src="img/produits/${produit.id}" alt="">
+                        <img src="img/produits/${produit.id}.png" alt="">
                     </div>
                     <div class="product-body">
                         <p class="product-category">Catégorie</p>
